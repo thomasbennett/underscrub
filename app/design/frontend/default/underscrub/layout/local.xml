@@ -2,56 +2,63 @@
 <layout>
 
 <default>
-    <reference name="head">
-        <action method="addCss"><stylesheet>css/fonts.css</stylesheet></action>
-        <action method="addJs"><script>jquery/jquery.js</script></action>
-        <action method="addJs"><script>jquery/init.js</script></action>
+  <reference name="head">
+      <action method="addJs"><script>jquery/jquery.js</script></action>
+  </reference>
+
+  <!-- Removals -->
+  <remove name="catalog.compare.sidebar" />
+  <remove name="right.permanent.callout" />
+  <remove name="left.permanent.callout" />
+  <remove name="left.newsletter" /> 
+  <remove name="right.reports.product.viewed" />
+  <remove name="paypal.partner.right.logo" />
+  <remove name="right.poll" />
+  <remove name="catalog.compare.list" />
+  <remove name="product.info.additional" />
+
+  <!-- # Template References # -->
+  <reference name="header">
+    <action method="setTemplate">
+      <template>page/html/header.phtml</template>
+    </action>
+
+    <!-- Search Bar -->
+    <reference name="catalog.topnav">
+      <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml" />
     </reference>
+  </reference>
 
-    <!-- Removals -->
-    <remove name="catalog.compare.sidebar" />
-    <remove name="right.permanent.callout" />
-    <remove name="left.permanent.callout" />
-    <remove name="left.newsletter" /> 
-    <remove name="right.reports.product.viewed" />
-    <remove name="paypal.partner.right.logo" />
-    <remove name="right.poll" />
-    <remove name="catalog.compare.list" />
-    <remove name="product.info.additional" />
-
-    <!-- # Root References # -->
-    <reference name="header">
-        <action method="setTemplate">
-            <template>page/html/header.phtml</template>
-        </action>
-
-        <!-- Search Bar -->
-        <reference name="catalog.topnav">
-            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml" />
-        </reference>
-    </reference>
-
-    <reference name="footer">
-        <!-- Remove From CMS & Override -->
-        <action method="unsetChild"><name>footer_links</name></action>
-        <action method="setTemplate">
-            <template>page/html/footer.phtml</template>
-        </action>
-    </reference>
+  <reference name="footer">
+      <!-- Remove From CMS & Override -->
+      <action method="unsetChild">
+        <name>footer_links</name>
+      </action>
+      <block type="newsletter/subscribe" name="newsletter" as="newsletter" before="footer_links" template="newsletter/subscribe.phtml" />
+      <action method="setTemplate">
+          <template>page/html/footer.phtml</template>
+      </action>
+  </reference>
 </default>
 
-<page_homepage>
-    <reference name="head">
-      <action method="setForcedTitle"><title>Outpost Armory | Guns,Ammo,Gear</title></action>
+<!-- ### LOGIN ### -->
+<!-- If Logged In -->
+<customer_logged_in>
+    <reference name="top.links">
+      <block type="checkout/links" name="checkout_cart_link_custom">
+        <action method="addCartLink"></action>
+        <action method="addCheckoutLink"></action>
+      </block>
     </reference>
-    <reference name="root">
-        <block type="newsletter/subscribe" name="newsletter" as="newsletter" template="newsletter/subscribe.phtml" />
-        <block type="manufacturers/manufacturers_dropdown" name="manufacturers" as="manufacturers" template="manufacturers/dropdown.phtml"/>
-        <reference name="content">
-          <block type="featuredproducts/listing" template="inchoo/block_featured_products.phtml" />
-        </reference>
-    </reference>
-</page_homepage>
+</customer_logged_in>
+
+<!-- If Logged Out -->
+<customer_logged_out>
+  <reference name="top.links">
+    <action method="removeLinkByUrl"><url helper="customer/getAccountUrl" /></action>
+  </reference>
+</customer_logged_out>
+
 
 <!-- # CATALOG # -->
 

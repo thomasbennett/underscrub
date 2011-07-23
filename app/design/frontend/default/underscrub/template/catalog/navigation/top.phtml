@@ -23,24 +23,28 @@
  * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
+?>
+<?php
 /**
- * @var Mage_Page_Block_Html_Header $this
+ * Top menu for store
+ *
+ * @see Mage_Catalog_Block_Navigation
  */
 ?>
-<div class="header-container">
-  <div class="header">
-    <a href="/"><h1 class="logo">Under Scrub | Silver Lining Textiles</h1></a>
-    <div class="quick-access f-right">
-      <?php echo $this->getChildHtml('topSearch') ?>
-      <?php if(Mage::getSingleton('customer/session')->IsLoggedIn()): ?>
-        <p class="welcome-msg">
-          <?php echo $this->__('Welcome, %s!', Mage::getSingleton('customer/session')->getCustomer()->getFirstname()); ?>
-        </p>
-      <?php endif; ?>
-      <?php echo $this->getChildHtml('topLinks') ?>
-    </div>
-    <?php echo $this->getChildHtml('store_language') ?>
-    <?php echo $this->getChildHtml('topContainer'); ?>
-    <?php echo $this->getChildHtml('topMenu') ?>
-  </div>
+<?php
+/**
+ * $this->renderCategoriesMenuHtml() supports optional arguments:
+ * int Level number for list item class to start from
+ * string Extra class of outermost list items
+ * string If specified wraps children list in div with this class
+ */
+?>
+<?php $_menu = $this->renderCategoriesMenuHtml(0,'level-top') ?>
+<?php if($_menu): ?>
+<div class="nav-container">
+  <ul id="nav">
+    <?php echo $_menu ?>
+    <li class="last-nav"><a href="<?php echo $this->getUrl('about-us')?>"><span><?php echo $this->__('About Us') ?></span></a></li>
+  </ul>
 </div>
+<?php endif ?>

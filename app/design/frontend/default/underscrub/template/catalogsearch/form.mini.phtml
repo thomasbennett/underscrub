@@ -23,24 +23,17 @@
  * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
-/**
- * @var Mage_Page_Block_Html_Header $this
- */
 ?>
-<div class="header-container">
-  <div class="header">
-    <a href="/"><h1 class="logo">Under Scrub | Silver Lining Textiles</h1></a>
-    <div class="quick-access f-right">
-      <?php echo $this->getChildHtml('topSearch') ?>
-      <?php if(Mage::getSingleton('customer/session')->IsLoggedIn()): ?>
-        <p class="welcome-msg">
-          <?php echo $this->__('Welcome, %s!', Mage::getSingleton('customer/session')->getCustomer()->getFirstname()); ?>
-        </p>
-      <?php endif; ?>
-      <?php echo $this->getChildHtml('topLinks') ?>
+<form id="search_mini_form" action="<?php echo $this->helper('catalogsearch')->getResultUrl() ?>" method="get">
+    <div class="form-search">
+        <input id="search" type="text" name="<?php echo $this->helper('catalogsearch')->getQueryParamName() ?>" value="<?php echo $this->helper('catalogsearch')->getEscapedQueryText() ?>" class="input-text" />
+        <button type="submit" title="<?php echo $this->__('Search') ?>" class="button"></button>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Search Under Scrub') ?>');
+            searchForm.initAutocomplete('<?php echo $this->helper('catalogsearch')->getSuggestUrl() ?>', 'search_autocomplete');
+        //]]>
+        </script>
     </div>
-    <?php echo $this->getChildHtml('store_language') ?>
-    <?php echo $this->getChildHtml('topContainer'); ?>
-    <?php echo $this->getChildHtml('topMenu') ?>
-  </div>
-</div>
+</form>

@@ -1,1 +1,53 @@
 2011-07-23T17:37:39+00:00 CRIT (2): Not valid template file:frontend/base/default/template/page/home.phtml
+2011-07-23T19:12:57+00:00 ERR (3): Warning: Missing argument 1 for Mage_Core_Block_Abstract::unsetChild()  in /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Block/Abstract.php on line 370
+2011-07-23T19:12:57+00:00 ERR (3): Notice: Undefined variable: alias  in /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Block/Abstract.php on line 372
+2011-07-23T19:12:57+00:00 ERR (3): Notice: Undefined variable: alias  in /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Block/Abstract.php on line 377
+2011-07-23T21:09:53+00:00 ERR (3): Warning: getimagesize(http://underscrub.dev/skin/adminhtml/base/default/images/media/about_us_img.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Image/Adapter/Abstract.php on line 87
+2011-07-23T21:09:53+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-23T21:18:39+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:18:39+00:00 ERR (3): Notice: Use of undefined constant ‘Staff’ - assumed '‘Staff’'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:19:01+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:19:57+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:22:45+00:00 ERR (3): Warning: include(Mage//Helper/Data.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Autoload.php on line 93
+2011-07-23T21:22:45+00:00 ERR (3): Warning: include() [<a href='function.include'>function.include</a>]: Failed opening 'Mage//Helper/Data.php' for inclusion (include_path='/Applications/MAMP/htdocs/underscrub/app/code/local:/Applications/MAMP/htdocs/underscrub/app/code/community:/Applications/MAMP/htdocs/underscrub/app/code/core:/Applications/MAMP/htdocs/underscrub/lib:.:/Applications/MAMP/bin/php5.3/lib/php:/Users/thomasbennett/pear/PEAR')  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Autoload.php on line 93
+2011-07-23T21:22:49+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:23:06+00:00 ERR (3): Warning: include(Mage//Helper/Data.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Autoload.php on line 93
+2011-07-23T21:23:06+00:00 ERR (3): Warning: include() [<a href='function.include'>function.include</a>]: Failed opening 'Mage//Helper/Data.php' for inclusion (include_path='/Applications/MAMP/htdocs/underscrub/app/code/local:/Applications/MAMP/htdocs/underscrub/app/code/community:/Applications/MAMP/htdocs/underscrub/app/code/core:/Applications/MAMP/htdocs/underscrub/lib:.:/Applications/MAMP/bin/php5.3/lib/php:/Users/thomasbennett/pear/PEAR')  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Autoload.php on line 93
+2011-07-23T21:23:50+00:00 ERR (3): Warning: call_user_func_array() expects parameter 1 to be a valid callback, class 'Mage_Checkout_Helper_Data' does not have a method ''  in /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/Layout.php on line 323
+2011-07-23T21:23:50+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:24:26+00:00 ERR (3): Warning: call_user_func_array() expects parameter 1 to be a valid callback, class 'Mage_Checkout_Helper_Data' does not have a method ''  in /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/Layout.php on line 323
+2011-07-23T21:24:26+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:26:36+00:00 ERR (3): Warning: call_user_func_array() expects parameter 1 to be a valid callback, class 'Mage_Checkout_Helper_Data' does not have a method ''  in /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/Layout.php on line 323
+2011-07-23T21:26:36+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:27:19+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:29:50+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:30:04+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:30:05+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:31:44+00:00 ERR (3): Warning: call_user_func_array() expects parameter 1 to be a valid callback, class 'Mage_Wishlist_Helper_Data' does not have a method ''  in /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/Layout.php on line 323
+2011-07-23T21:31:44+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:31:58+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:36:13+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:37:34+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:37:46+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:40:45+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:43:08+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:44:06+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:45:15+00:00 ERR (3): Notice: Use of undefined constant ‘test1′ - assumed '‘test1′'  in /Applications/MAMP/htdocs/underscrub/app/design/frontend/default/underscrub/template/catalog/navigation/top.phtml on line 47
+2011-07-23T21:45:59+00:00 ERR (3): Warning: getimagesize(http://underscrub.dev/skin/adminhtml/base/default/images/media/about_us_img.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Image/Adapter/Abstract.php on line 87
+2011-07-23T21:45:59+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
