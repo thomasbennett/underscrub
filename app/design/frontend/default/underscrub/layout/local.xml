@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+<layout>
+
+<default>
+    <reference name="head">
+        <action method="addCss"><stylesheet>css/fonts.css</stylesheet></action>
+        <action method="addJs"><script>jquery/jquery.js</script></action>
+        <action method="addJs"><script>jquery/init.js</script></action>
+    </reference>
+
+    <!-- Removals -->
+    <remove name="catalog.compare.sidebar" />
+    <remove name="right.permanent.callout" />
+    <remove name="left.permanent.callout" />
+    <remove name="left.newsletter" /> 
+    <remove name="right.reports.product.viewed" />
+    <remove name="paypal.partner.right.logo" />
+    <remove name="right.poll" />
+    <remove name="catalog.compare.list" />
+    <remove name="product.info.additional" />
+
+    <!-- # Root References # -->
+    <reference name="header">
+        <action method="setTemplate">
+            <template>page/html/header.phtml</template>
+        </action>
+
+        <!-- Search Bar -->
+        <reference name="catalog.topnav">
+            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml" />
+        </reference>
+    </reference>
+
+    <reference name="footer">
+        <!-- Remove From CMS & Override -->
+        <action method="unsetChild"><name>footer_links</name></action>
+        <action method="setTemplate">
+            <template>page/html/footer.phtml</template>
+        </action>
+    </reference>
+</default>
+
+<page_homepage>
+    <reference name="head">
+      <action method="setForcedTitle"><title>Outpost Armory | Guns,Ammo,Gear</title></action>
+    </reference>
+    <reference name="root">
+        <block type="newsletter/subscribe" name="newsletter" as="newsletter" template="newsletter/subscribe.phtml" />
+        <block type="manufacturers/manufacturers_dropdown" name="manufacturers" as="manufacturers" template="manufacturers/dropdown.phtml"/>
+        <reference name="content">
+          <block type="featuredproducts/listing" template="inchoo/block_featured_products.phtml" />
+        </reference>
+    </reference>
+</page_homepage>
+
+<!-- # CATALOG # -->
+
+<!-- Category View -->
+<catalog_category_default>
+    <reference name="root">
+        <action method="setTemplate">
+            <template>page/2columns-left.phtml</template>
+        </action>
+    </reference> 
+
+    <reference name="left">
+        <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+        </block>
+    </reference>
+    
+    <reference name="product_list">
+        <action method="setColumnCount"><columns>4</columns></action>
+    </reference>
+</catalog_category_default>
+
+<!-- set column count for all catalog views -->
+<catalog_category_view>
+    <reference name="root">
+        <action method="setTemplate">
+            <template>page/2columns-left.phtml</template>
+        </action>
+    </reference> 
+
+    <reference name="product_list">
+        <action method="setColumnCount"><columns>4</columns></action>
+    </reference>
+</catalog_category_view>
+
+<catalog_category_layered>
+    <reference name="root">
+        <action method="setTemplate">
+            <template>page/2columns-left.phtml</template>
+        </action>
+    </reference> 
+    <reference name="product_list">
+        <action method="setColumnCount"><columns>4</columns></action>
+    </reference>
+</catalog_category_layered>
+
+
+<!-- Individual Product View -->
+<catalog_product_view>
+    <reference name="root">
+        <action method="setTemplate">
+            <template>page/2columns-left.phtml</template>
+        </action>
+        <reference name="left">
+          <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+              <action method="addItemRender">
+                  <type>simple</type>
+                  <block>checkout/cart_item_renderer</block>
+                  <template>checkout/cart/sidebar/default.phtml</template>
+              </action>
+              <action method="addItemRender">
+                  <type>grouped</type>
+                  <block>checkout/cart_item_renderer_grouped</block>
+                  <template>checkout/cart/sidebar/default.phtml</template>
+              </action>
+              <action method="addItemRender">
+                  <type>configurable</type>
+                  <block>checkout/cart_item_renderer_configurable</block>
+                  <template>checkout/cart/sidebar/default.phtml</template>
+              </action>
+          </block>
+        </reference>
+    </reference>
+</catalog_product_view>
+
+<!-- # SEARCH # -->
+
+<!-- Search Result View -->
+<catalogsearch_result_index>
+    <reference name="root">
+        <action method="setTemplate">
+            <template>page/2columns-left.phtml</template>
+        </action>
+    </reference>
+
+    <reference name="content">
+        <action method="setColumnCount"><columns>4</columns></action>
+    </reference>
+</catalogsearch_result_index>
+
+<!-- Custom Controllers -->
+<special_orders_index_index>
+  <reference name="head">
+    <action method="setForcedTitle">
+      <title>
+        Outpost Armory | Special Orders
+      </title>
+    </action>
+  </reference>
+  <reference name="root">
+    <action method="setTemplate">
+      <template>page/specialOrders.phtml</template>
+    </action>
+    <reference name="left">
+        <block type="catalog/layer_view" name="catalog.leftnav" template="catalog/layer/view.phtml"/>
+        <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+        </block>
+    </reference>
+    <reference name="content">
+      <block type="specialOrders/specialorders" name="specialOrders.specialorders" template="specialOrders/specialorders.phtml" />
+    </reference>
+  </reference>
+</special_orders_index_index>
+
+<new_items_index_index>
+  <reference name="head">
+    <action method="setForcedTitle">
+      <title>
+        Outpost Armory | New Items
+      </title>
+    </action>
+  </reference>
+  <reference name="root">
+     <action method="setTemplate">
+      <template>page/newItems.phtml</template>
+    </action>
+    <reference name="left">
+        <block type="catalog/layer_view" name="catalog.leftnav" template="catalog/layer/view.phtml"/>
+        <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+        </block>
+    </reference>
+    <reference name="content">
+      <block type="newItems/product_newitems" name="newItems.product.newitems" template="newItems/product/newitems.phtml">
+        <action method="setColumnCount"><count>4</count></action>
+      </block>
+    </reference>
+  </reference>
+</new_items_index_index>
+
+<sale_items_index_index>
+  <reference name="root">
+  <reference name="head">
+    <action method="setForcedTitle">
+      <title>
+        Outpost Armory | Sale Items
+      </title>
+    </action>
+  </reference>
+     <action method="setTemplate">
+      <template>page/saleItems.phtml</template>
+    </action>
+    <reference name="left">
+        <block type="catalog/layer_view" name="catalog.leftnav" template="catalog/layer/view.phtml"/>
+        <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+        </block>
+    </reference>
+    <reference name="content">
+      <block type="saleItems/product_saleitems" name="saleItems.product.saleitems" template="saleItems/product/saleitems.phtml">
+        <action method="setColumnCount"><count>4</count></action>
+      </block>
+    </reference>
+  </reference>
+</sale_items_index_index>
+
+<top_sellers_index_index>
+  <reference name="head">
+    <action method="setForcedTitle">
+      <title>
+        Outpost Armory | Top Sellers
+      </title>
+    </action>
+  </reference>
+  <reference name="root">
+    <action method="setTemplate">
+      <template>page/topSellers.phtml</template>
+    </action>
+    <reference name="left">
+      <block type="catalog/layer_view" name="catalog.leftnav" template="catalog/layer/view.phtml"/>
+      <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+          <action method="addItemRender">
+              <type>simple</type>
+              <block>checkout/cart_item_renderer</block>
+              <template>checkout/cart/sidebar/default.phtml</template>
+          </action>
+          <action method="addItemRender">
+              <type>grouped</type>
+              <block>checkout/cart_item_renderer_grouped</block>
+              <template>checkout/cart/sidebar/default.phtml</template>
+          </action>
+          <action method="addItemRender">
+              <type>configurable</type>
+              <block>checkout/cart_item_renderer_configurable</block>
+              <template>checkout/cart/sidebar/default.phtml</template>
+          </action>
+      </block>
+    </reference>
+    <reference name="content">
+      <block type="topSellers/product_topsellers" name="topSellers.product.topsellers" template="topSellers/product/topsellers.phtml">
+        <action method="setColumnCount"><count>4</count></action>
+      </block>
+    </reference>
+  </reference>
+</top_sellers_index_index>
+
+<brands_index_index>
+  <reference name="head">
+    <action method="setForcedTitle">
+      <title>
+        Outpost Armory | Brands
+      </title>
+    </action>
+  </reference>
+  <reference name="root">
+    <action method="setTemplate">
+      <template>page/brands.phtml</template>
+    </action>
+    <reference name="left">
+        <block type="manufacturers/manufacturers_dropdown" name="manufacturers" as="manufacturers" template="manufacturers/dropdown.phtml"/>
+        <block type="catalog/layer_view" name="catalog.leftnav" template="catalog/layer/view.phtml"/>
+        <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+            <action method="addItemRender">
+                <type>simple</type>
+                <block>checkout/cart_item_renderer</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>grouped</type>
+                <block>checkout/cart_item_renderer_grouped</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+            <action method="addItemRender">
+                <type>configurable</type>
+                <block>checkout/cart_item_renderer_configurable</block>
+                <template>checkout/cart/sidebar/default.phtml</template>
+            </action>
+        </block>
+    </reference>
+    <reference name="content">
+      <block type="brands/product_brands" name="brands.product.brands" template="brands/product/brands.phtml">
+        <action method="setColumnCount"><count>4</count></action>
+      </block>
+    </reference>
+  </reference>
+</brands_index_index>
+
+<ffllocator_index_index>
+  <reference name="head">
+    <action method="setForcedTitle">
+      <title>
+        Outpost Armory | Locate An FFL Dealer
+      </title>
+    </action>
+  </reference>
+  <reference name="root">
+    <action method="setTemplate">
+      <template>page/ffllocator.phtml</template>
+    </action>
+    <reference name="content">
+      <block type="ffllocator/ffllocator" name="ffllocator.ffllocator" template="ffllocator/ffllocator.phtml">
+      </block>
+    </reference>
+  </reference>
+</ffllocator_index_index>
+
+<contact_index_index>
+  <reference name="head">
+    <action method="setForcedTitle">
+      <title>
+        Outpost Armory | Employment Application
+      </title>
+    </action>
+  </reference>
+  <reference name="root">
+    <action method="setTemplate">
+      <template>page/contact.phtml</template>
+    </action>
+    <reference name="left">
+      <block type="catalog/layer_view" name="catalog.leftnav" template="catalog/layer/view.phtml"/>
+      <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+          <action method="addItemRender">
+              <type>simple</type>
+              <block>checkout/cart_item_renderer</block>
+              <template>checkout/cart/sidebar/default.phtml</template>
+          </action>
+          <action method="addItemRender">
+              <type>grouped</type>
+              <block>checkout/cart_item_renderer_grouped</block>
+              <template>checkout/cart/sidebar/default.phtml</template>
+          </action>
+          <action method="addItemRender">
+              <type>configurable</type>
+              <block>checkout/cart_item_renderer_configurable</block>
+              <template>checkout/cart/sidebar/default.phtml</template>
+          </action>
+      </block>
+    </reference>
+    <reference name="content">
+      <block type="contact/contact" name="contact.contact" template="contact/contact.phtml">
+      </block>
+    </reference>
+  </reference>
+</contact_index_index>
+
+</layout>

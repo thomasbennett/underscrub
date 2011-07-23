@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+ <modules>
+  <Underscrub_CmsPages>
+   <codePool>local</codePool>
+   <active>true</active>
+  </Underscrub_CmsPages>
+ </modules>
+</config>
