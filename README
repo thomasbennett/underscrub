@@ -9,20 +9,33 @@ Colors:
   Charcoal - #666   
   Lightgray - #888
   Green - #91bb3f
-  Babyblue - #0993d4
+  Babyblue - #669fbd
   Darkblue - #05508a
 
 Custom:
   1. Template - Under header starting at :431
   2. Homepage :875
   3. Social Media :598
+  4. Background detection found in /page/html/header.phtml
+  5. STD (p equivalent) - :924
+  6. Product page styles - :716
 
 # Images
 -----------------------------
   Images defined by the block ID name (e.g. newsletter-bg.jpg/png)
+  Icons for 'Product Features' are found under /images/icons/
 
 # To Do List
 -----------------------------
   1. Populate social media links (footer.phtml)
   2. Link up homepage callouts (perfer make links dynamic)
   3. Add sprites to homepage callouts and give live text ?
+  4. Sizing chart and product care links in /catalog/product/view.phtml
+  5. Add new product features, images and attributes in /catalog/product/view.phtml :146
+  6. Finalize AddToAny (ShareButton) code in /catalog/product/view.phtml line :149
+
+# Notes
+-----------------------------
+  1. If heightened security is needed (login to purchase), remove Add-To_links (styles.css :801)
+  2. If product options get confusing, turn on required indicator (styles.css :873)
+  3. If catalog needs to be paginated turn on the toolbar (styles.css :347)

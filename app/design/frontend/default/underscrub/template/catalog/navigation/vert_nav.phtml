@@ -1,0 +1,10 @@
+<div class="vertical-nav-container">
+  <div class="h2 green border-bottom"><strong><?php echo $this->__('Browse Categories') ?></strong></div>
+  <h4 class="no-display"><?php echo $this->__('Category Navigation:') ?></h4>
+  <ul id="nav_vert">
+    <?php foreach ($this->getStoreCategories() as $_category): ?>
+      <?php echo $this->drawItem($_category) ?>
+    <?php endforeach ?>
+  </ul>
+<?php echo $this->getChildHtml('topLeftLinks') ?>
+</div>
