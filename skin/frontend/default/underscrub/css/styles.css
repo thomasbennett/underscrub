@@ -907,7 +907,7 @@ input#newsletter { background: url('../images/newsletter-input.png') no-repeat; 
 /* CMS Home Page */
 .cms-home .subtitle {}
 .cms-index-index .subtitle {}
-.slideshow { background: url('../images/feature-bg.jpg') no-repeat; height: 424px; margin-top: 30px; position: relative; width: 942px; }
+.slideshow { background: url('../images/feature-bg.jpg') no-repeat; height: 424px; margin-top: 30px; overflow: hidden; position: relative; width: 942px; }
 #pager { position: absolute; bottom: 0; right: 0; }
 .callouts { float: left; margin-left: -2px; margin-top: 5px; width: 950px; /* Give extra to make up for shadows on callouts */}
 .callouts li { margin-right: 10px; }
