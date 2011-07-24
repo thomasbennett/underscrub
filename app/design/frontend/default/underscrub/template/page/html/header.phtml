@@ -27,6 +27,10 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
+<?php /* Detect if its the homepage and add a separate background */ ?>
+<?php if($this->getIsHomePage()): ?>
+  <style>body { background: url('<?php echo $this->getSkinUrl() ?>/images/bg.jpg') repeat-x; }</style>
+<?php endif; ?>
 <div class="header-container">
   <div class="header">
     <a href="/"><h1 class="logo">Under Scrub | Silver Lining Textiles</h1></a>
@@ -37,7 +41,7 @@
           <?php echo $this->__('Welcome, %s!', Mage::getSingleton('customer/session')->getCustomer()->getFirstname()); ?>
         </p>
       <?php endif; ?>
-      <?php echo $this->getChildHtml('topLinks') ?>
+      <?php echo $this->getChildHtml('topLinks'); ?>
     </div>
     <?php echo $this->getChildHtml('store_language') ?>
     <?php echo $this->getChildHtml('topContainer'); ?>

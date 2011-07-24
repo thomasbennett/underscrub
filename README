@@ -1,7 +1,7 @@
 Suggested improvements:
 -----------------------------
-1. Crop out logo, save as PNG
-2. Navigation needs hover states
+  1. Crop out logo, save as PNG
+  2. Navigation needs hover states
 
 # Styles (styles.css)
 -----------------------------
@@ -17,8 +17,12 @@ Custom:
   2. Homepage :875
   3. Social Media :598
 
+# Images
+-----------------------------
+  Images defined by the block ID name (e.g. newsletter-bg.jpg/png)
+
 # To Do List
 -----------------------------
-1. Populate social media links (footer.phtml)
-2. Link up homepage callouts (perfer make links dynamic)
-3. Add sprites to homepage callouts and give live text ?
+  1. Populate social media links (footer.phtml)
+  2. Link up homepage callouts (perfer make links dynamic)
+  3. Add sprites to homepage callouts and give live text ?
