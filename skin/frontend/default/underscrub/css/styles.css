@@ -115,9 +115,9 @@ ul,ol         { list-style:none; }
 .main { }
 
 /* Base Columns */
-.col-left { background: url('../images/sidebar-bg.jpg') repeat-y right top; float:left; margin-top: 45px; min-height: 400px; width: 200px; }
+.col-left { background: url('../images/col-left-bg.jpg') no-repeat right top; float:left; min-height: 400px; width: 200px; }
 .col-main { float:left; width:717px; }
-.col-right { float:right; width:230px; border:1px solid #ddd; padding:5px 5px 0; }
+.col-right { background: url('../images/col-right-bg.jpg') no-repeat left top; float:right; padding-left:40px; width:175px; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
@@ -265,7 +265,7 @@ p.control input.radio { margin-right:6px; }
 .form-list .customer-dob .dob-year { width:140px; }
 .form-list .customer-dob .dob-year input.input-text { width:134px; }
 
-.buttons-set { clear:both; margin:5px 0 0; padding:5px; border:1px solid #ddd; }
+.buttons-set { clear:both; margin:5px 0 0; padding:5px; }
 .buttons-set .back-link { float:left; }
 .buttons-set button.button { float:right; }
 .buttons-set p.required { margin:0 0 5px; }
@@ -312,7 +312,7 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .breadcrumbs li.home a { color: #ccef8a; }
 
 /* Page Heading */
-.page-title { margin-bottom: 40px; }
+.page-title { margin-bottom: 20px; }
 .page-title h1,
 .page-title h2 { font-size:48px; color:#000; font-weight: bold; }
 .page-title .separator { margin:0 3px; }
@@ -344,7 +344,7 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .sorter .link-feed {}
 
 /* Toolbar */
-.toolbar {}
+.toolbar { display: none; }
 .toolbar .pager {}
 .toolbar .sorter {}
 .toolbar-bottom {}
@@ -391,11 +391,14 @@ tr.summary-details-excluded { font-style:italic; }
 .cart-tax-total-expanded { background-position:100% -53px; }
 
 /* Class: std - styles for admin-controlled content */
+.std { font-size: 14px; line-height: 1.8; max-width: 680px; }
 .std .subtitle { padding:0; }
+.std p { line-height: 2.4; }
 .std ol.ol { list-style:decimal outside; padding-left:1.5em; }
 .std ul.disc { list-style:disc outside; padding-left:18px; margin:0 0 10px; }
 .std dl dt { font-weight:bold; }
 .std dl dd { margin:0 0 10px; }
+.std img { border: 5px solid #ddd; margin-bottom: 40px;  }
 /*.std ul,
 .std ol,
 .std dl,
@@ -419,7 +422,7 @@ tr.summary-details-excluded { font-style:italic; }
 .std em { font-style:italic; }*/
 
 /* Misc */
-.links li { display:inline; }
+.links li { display:inline; margin-left: 30px; }
 .links li.first { padding-left:0 !important; }
 .links li.last { background:none !important; padding-right:0 !important; }
 
@@ -459,7 +462,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { background: url('../images/logo.jpg') no-repeat; height: 126px; margin-left: 30px; text-indent: -9999px; width: 212px;}
 .header .welcome-msg { font-weight:bold; float: left;}
-.header .links { float: left; }
+.header .links { float: right; margin-right: 30px; margin-top: 5px;  }
 .header .form-search { float: left; }
 .header .form-search .search-autocomplete { z-index:999; }
 .header .form-search .search-autocomplete ul { border:1px solid #ddd; background-color:#fff; }
@@ -470,7 +473,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container { clear:both; text-align:right; }
 
 /********** < Search */
-div.form-search input#search { background: url('../images/search.png') no-repeat; border: 0; color: #bbb; height: 31px; padding-left: 10px; width: 181px; }
+div.form-search input#search { background: url('../images/search.png') no-repeat; border: 0; color: #bbb; height: 31px; padding: 0; padding-left: 10px; width: 181px; }
 div.form-search button { height: 25px; margin-left: -45px; width: 31px; }
 
 
@@ -488,7 +491,7 @@ div.form-search button { height: 25px; margin-left: -45px; width: 31px; }
 #nav li.parent {}
 #nav li a { display:block; text-decoration:none; }
 #nav li a:hover { text-decoration:none; }
-#nav li a span { color:#222; display:block; font-family: 'NevisBold'; font-weight: normal; font-size: 16px; white-space:nowrap; cursor:pointer; text-transform: uppercase; }
+#nav li a span { color:#333; display:block; font-family: 'NevisBold'; font-weight: normal; font-size: 16px; white-space:nowrap; cursor:pointer; text-transform: uppercase; }
 #nav li a span:hover { color: #444; text-shadow: 1px 1px 1px white; }
 #nav li ul a span { white-space:normal; }
 #nav li.last-nav { background: none !important; }
@@ -524,8 +527,9 @@ div.form-search button { height: 25px; margin-left: -45px; width: 31px; }
 
 /* Navigation - Sidebar */
 .vertical-nav-container { width: 165px; }
-#nav_vert li { list-style-image: url('../images/green-arw.gif'); margin-left: 1em; }
-#nav_vert li a { color: #000; line-height: 2.6; font-size: 14px; font-weight: normal;  }
+.sidebar { margin-top: 45px; }
+.sidebar li { list-style-image: url('../images/green-arw.gif'); margin-left: 1em; }
+.sidebar li a { color: #000; line-height: 2.6; font-size: 14px; font-weight: normal;  }
 
 /********** Navigation > */
 /* ======================================================================================= */
@@ -651,15 +655,15 @@ input#newsletter { background: url('../images/newsletter-input.png') no-repeat; 
 /* View Type: Grid */
 .products-grid { position:relative; }
 .products-grid.last { border-bottom:0; }
-.products-grid li.item { float:left; width:138px; padding:12px 10px 80px; }
-.products-grid .product-image { display:block; width:135px; height:135px; margin:0 0 10px; }
+.products-grid li.item { float:left; width:239px; }
+.products-grid .product-image { border: 3px solid #ddd; display:block; width:215px; height:160px; margin:0 0 10px; }
 .products-grid .product-name { margin:0 0 5px; font-weight:bold; font-size:13px; }
 .products-grid .product-name a {}
 .products-grid .price-box { }
 .products-grid .availability { line-height:21px; }
 .products-grid .actions { position:absolute; bottom:12px; }
 .col2-left-layout .products-grid,
-.col2-right-layout .products-grid { width:632px; margin:0 auto; }
+.col2-right-layout .products-grid { width:717px; margin:25px auto 0; }
 .col1-layout .products-grid { width:790px; margin:0 auto; }
 
 /* View Type: List */
@@ -677,6 +681,21 @@ input#newsletter { background: url('../images/newsletter-input.png') no-repeat; 
 .products-list .add-to-links li { display:inline; }
 .products-list .add-to-links .separator { display:inline; margin:0 2px; }
 /* ======================================================================================= */
+
+/* Products Grid Pricing */
+.products-grid .price-box,
+.products-grid h2.product-name,
+.price-divider { 
+  float: left; 
+}
+
+.price-divider { color: #ccc; font-size: 26px; margin-top: -7px; text-shadow: 1px 1px 1px #fff; }
+.products-grid h2.product-name { margin-top: 2px; }
+
+.products-grid .price {
+  font-weight: bold !important;
+  font-size: 14px !important; 
+}
 
 
 /* Product View ========================================================================== */
@@ -875,7 +894,7 @@ input#newsletter { background: url('../images/newsletter-input.png') no-repeat; 
 .product-view .short-description {}
 
 /* Product Options */
-.product-options { }
+.product-options { margin: 40px 0; }
 .product-options dt label { font-weight:bold; }
 .product-options dt .qty-holder { float:right; }
 .product-options dt .qty-holder label { vertical-align:middle; }
@@ -908,6 +927,7 @@ input#newsletter { background: url('../images/newsletter-input.png') no-repeat; 
 /* Block: Upsell */
 .product-view .box-up-sell {margin-left: -220px; /*ugly hack to not have to create a  new references */}
 .product-view .box-up-sell .products-grid td { width:25%; }
+.box-up-sell .product-image { margin-right: 18px; }
 .box-up-sell .price-box { float: left; }
 
 /* Block: Tags */
@@ -949,9 +969,6 @@ a.active { background: url('../images/active-slide.png') no-repeat;  }
 .callouts { float: left; margin-left: -2px; margin-top: 5px; width: 950px; /* Give extra to make up for shadows on callouts */}
 .callouts li { margin-right: 10px; }
 .last-callout { margin-right: 0 !important; }
-
-/* STD */
-.std { font-size: 14px; line-height: 1.8; }
 
 /* Sitemap */
 .page-sitemap .links { text-align:right; margin:0 8px -22px 0; }

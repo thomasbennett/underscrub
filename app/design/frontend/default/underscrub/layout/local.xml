@@ -16,6 +16,7 @@
   <remove name="right.poll" />
   <remove name="catalog.compare.list" />
   <remove name="product.info.additional" />
+  <remove name="checkout_cart_link"/>
 
   <!-- # Template References # -->
   <reference name="header">
@@ -30,7 +31,7 @@
   </reference>
 
   <reference name="footer">
-      <!-- Remove From CMS & Override -->
+      <!-- Remove Default from CMS & override -->
       <action method="unsetChild">
         <name>footer_links</name>
       </action>
@@ -38,6 +39,15 @@
       <action method="setTemplate">
           <template>page/html/footer.phtml</template>
       </action>
+  </reference>
+
+  <!-- Add the right contact links sidebar where 2col-right is seclected -->
+  <reference name="root">
+    <reference name="right">
+      <block type="cms/block" name="cms_sidebar_links">
+          <action method="setBlockId"><block_id>sidebar_links</block_id></action>
+      </block>
+    </reference>
   </reference>
 </default>
 
@@ -47,7 +57,6 @@
     <reference name="top.links">
       <block type="checkout/links" name="checkout_cart_link_custom">
         <action method="addCartLink"></action>
-        <action method="addCheckoutLink"></action>
       </block>
     </reference>
 </customer_logged_in>
@@ -56,6 +65,9 @@
 <customer_logged_out>
   <reference name="top.links">
     <action method="removeLinkByUrl"><url helper="customer/getAccountUrl" /></action>
+    <block type="checkout/links" name="checkout_cart_link_custom">
+      <action method="addCartLink"></action>
+    </block>
   </reference>
 </customer_logged_out>
 
@@ -64,29 +76,34 @@
 <!-- Category View -->
 <catalog_category_default>
     <reference name="root">
-        <action method="setTemplate">
-            <template>page/2columns-left.phtml</template>
-        </action>
+      <action method="setTemplate">
+        <template>page/2columns-left.phtml</template>
+      </action>
+      <reference name="left">
+        <block type="catalog/navigation" before="-" name="catalog.vertnav" template="catalog/navigation/vert_nav.phtml"/>
+      </reference>
     </reference> 
 </catalog_category_default>
 
 <!-- set column count for all catalog views -->
 <catalog_category_view>
     <reference name="root">
-        <action method="setTemplate">
-            <template>page/2columns-left.phtml</template>
-        </action>
+      <action method="setTemplate">
+        <template>page/2columns-left.phtml</template>
+      </action>
     </reference> 
 </catalog_category_view>
 
 <catalog_category_layered>
     <reference name="root">
-        <action method="setTemplate">
-            <template>page/2columns-left.phtml</template>
-        </action>
+      <action method="setTemplate">
+        <template>page/2columns-left.phtml</template>
+      </action>
+      <reference name="left">
+        <block type="catalog/navigation" before="-" name="catalog.vertnav" template="catalog/navigation/vert_nav.phtml"/>
+      </reference>
     </reference> 
 </catalog_category_layered>
-
 
 <!-- Individual Product View -->
 <catalog_product_view>
@@ -120,9 +137,14 @@
 <!-- Search Result View -->
 <catalogsearch_result_index>
     <reference name="root">
-        <action method="setTemplate">
-            <template>page/2columns-left.phtml</template>
-        </action>
+      <action method="setTemplate">
+        <template>page/2columns-left.phtml</template>
+      </action>
+
+      <reference name="left">
+        <block type="catalog/navigation" before="-" name="catalog.vertnav" template="catalog/navigation/vert_nav.phtml"/>
+      </reference>
+
     </reference>
 </catalogsearch_result_index>
 </layout>

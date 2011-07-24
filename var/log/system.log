@@ -131,3 +131,195 @@
 [5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
 [6] /Applications/MAMP/htdocs/underscrub/index.php:80
 </pre>
+2011-07-24T21:26:48+00:00 ERR (3): Warning: getimagesize(http://underscrub.dev/skin/adminhtml/base/default/images/media/about_us_img.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Image/Adapter/Abstract.php on line 87
+2011-07-24T21:26:48+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:26:56+00:00 ERR (3): Warning: getimagesize(http://underscrub.dev/skin/adminhtml/base/default/images/media/about_us_img.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Image/Adapter/Abstract.php on line 87
+2011-07-24T21:26:56+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:27:04+00:00 ERR (3): Warning: getimagesize(http://underscrub.dev/skin/adminhtml/base/default/images/media/about_us_img.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Image/Adapter/Abstract.php on line 87
+2011-07-24T21:27:04+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:28:50+00:00 ERR (3): Warning: getimagesize(http://underscrub.dev/skin/adminhtml/base/default/images/media/about_us_img.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /Applications/MAMP/htdocs/underscrub/lib/Varien/Image/Adapter/Abstract.php on line 87
+2011-07-24T21:28:50+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:30:22+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:30:23+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:31:51+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:31:51+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:31:51+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:31:51+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:03+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:10+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:27+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:28+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:28+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:28+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:49+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:32:52+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:37:48+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:37:48+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:38:12+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:38:13+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>
+2011-07-24T21:38:14+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:44
+[1] /Applications/MAMP/htdocs/underscrub/lib/Zend/Controller/Response/Abstract.php:766
+[2] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Response/Http.php:75
+[3] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Controller/Varien/Front.php:188
+[4] /Applications/MAMP/htdocs/underscrub/app/code/core/Mage/Core/Model/App.php:340
+[5] /Applications/MAMP/htdocs/underscrub/app/Mage.php:627
+[6] /Applications/MAMP/htdocs/underscrub/index.php:80
+</pre>

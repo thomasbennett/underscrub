@@ -1,7 +1,7 @@
 Suggested improvements:
 -----------------------------
   1. Crop out logo, save as PNG
-  2. Navigation needs hover states
+  2. Navigation hover states
 
 # Styles (styles.css)
 -----------------------------
@@ -17,8 +17,10 @@ Custom:
   2. Homepage :875
   3. Social Media :598
   4. Background detection found in /page/html/header.phtml
-  5. STD (p equivalent) - :924
+  5. Admin CMS styles - :394
   6. Product page styles - :716
+  7. Prices (loose) - :681
+  8. Sidebars :529
 
 # Images
 -----------------------------
@@ -39,3 +41,5 @@ Custom:
   1. If heightened security is needed (login to purchase), remove Add-To_links (styles.css :801)
   2. If product options get confusing, turn on required indicator (styles.css :873)
   3. If catalog needs to be paginated turn on the toolbar (styles.css :347)
+  4. If client uses 'In Stock' revise the IF statement on /catalog/product/list.phtml line :64 & :108
+  5. To add additional pages to the CMS -> app/etc/local/Underscrub/CmsPage/etc/config.xml
