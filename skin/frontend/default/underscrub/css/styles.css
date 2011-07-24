@@ -480,6 +480,7 @@ div.form-search button { height: 25px; margin-left: -45px; width: 31px; }
 #nav li a { display:block; text-decoration:none; }
 #nav li a:hover { text-decoration:none; }
 #nav li a span { color:#222; display:block; font-family: 'NevisBold'; font-weight: normal; font-size: 16px; white-space:nowrap; cursor:pointer; text-transform: uppercase; }
+#nav li a span:hover { color: #444; text-shadow: 1px 1px 1px white; }
 #nav li ul a span { white-space:normal; }
 #nav li.last-nav { background: none !important; }
 
