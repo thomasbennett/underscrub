@@ -36,12 +36,37 @@
     <a href="/"><h1 class="logo">Under Scrub | Silver Lining Textiles</h1></a>
     <div class="quick-access f-right">
       <?php echo $this->getChildHtml('topSearch') ?>
+      <?php /* If user is logged in tell them HOWDY!
       <?php if(Mage::getSingleton('customer/session')->IsLoggedIn()): ?>
         <p class="welcome-msg">
           <?php echo $this->__('Welcome, %s!', Mage::getSingleton('customer/session')->getCustomer()->getFirstname()); ?>
         </p>
       <?php endif; ?>
-      <?php echo $this->getChildHtml('topLinks'); ?>
+      */ ?>
+      <?php
+        // get numbers of items in the shipping cart
+        $mageFilename = 'app/Mage.php';
+        require_once $mageFilename;
+
+        umask(0);
+        Mage::app();
+
+        Mage::getSingleton('core/session', array('name'=>'frontend'));
+
+        $cart = Mage::helper('checkout/cart')->getCart()->getItemsCount();
+      ?>
+      
+      <ul class="links">
+        <?php if ($this->helper('customer')->isLoggedIn()): ?>
+          <li class="alignment"><a href="/customer/account">My Account</a></li>
+          <li class="link-divider alignment">&nbsp;|&nbsp;</li>
+          <li class="alignment"><a href="/customer/account/logout" title="Log Out">Log Out</a></li>
+        <?php else: ?>
+          <li><a href="/customer/account/login" title="Login">Log In</a></li>
+        <?php endif; ?>
+        <li class="f-right"><a href="/checkout/cart" title="My Cart" class="top-link-cart"><?php echo $cart . ' items'; ?></a> in your shopping Cart</li>
+      </ul>
+      <?php //echo $this->getChildHtml('topLinks'); ?>
     </div>
     <?php echo $this->getChildHtml('store_language') ?>
     <?php echo $this->getChildHtml('topContainer'); ?>

@@ -43,3 +43,4 @@ Custom:
   3. If catalog needs to be paginated turn on the toolbar (styles.css :347)
   4. If client uses 'In Stock' revise the IF statement on /catalog/product/list.phtml line :64 & :108
   5. To add additional pages to the CMS -> app/etc/local/Underscrub/CmsPage/etc/config.xml
+  6. If more than 2 product images are added add detection for left and right classes and a clear after odd # nth-child in /catalog/product/view/media.phtml :83

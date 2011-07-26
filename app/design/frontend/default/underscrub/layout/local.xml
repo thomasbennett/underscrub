@@ -51,28 +51,7 @@
   </reference>
 </default>
 
-<!-- ### LOGIN ### -->
-<!-- If Logged In -->
-<customer_logged_in>
-    <reference name="top.links">
-      <block type="checkout/links" name="checkout_cart_link_custom">
-        <action method="addCartLink"></action>
-      </block>
-    </reference>
-</customer_logged_in>
-
-<!-- If Logged Out -->
-<customer_logged_out>
-  <reference name="top.links">
-    <action method="removeLinkByUrl"><url helper="customer/getAccountUrl" /></action>
-    <block type="checkout/links" name="checkout_cart_link_custom">
-      <action method="addCartLink"></action>
-    </block>
-  </reference>
-</customer_logged_out>
-
 <!-- # CATALOG # -->
-
 <!-- Category View -->
 <catalog_category_default>
     <reference name="root">
