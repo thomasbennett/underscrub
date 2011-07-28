@@ -95,20 +95,27 @@
       <block type="catalog/navigation" before="-" name="catalog.vertnav" template="catalog/navigation/vert_nav.phtml"/>
     </reference>
 
-<!-- In case Ineed to pull the upsells out and into a custom reference
+    <!--
+      **** This is where I tried to add it to the content ref. This works BUT it appears at the top or the bottom of the page. 
     <reference name="content">
-       <block type="catalog/product_list_upsell" name="product.info.upsell" as="upsell_products" template="catalog/product/list/upsell.phtml">
-        <action method="setColumnCount">
-         <columns>4</columns>
-        </action>
-        <action method="setItemLimit">
-         <type>upsell</type>
-         <limit>4</limit>
-        </action>
-       </block>
+      <block type="review/product_view_list" name="product.info.product_additional_data" as="reviews" template="review/product/view/list.phtml" />
+      <block type="review/form" name="product.review.form" as="review_form">
+        <block type="page/html_wrapper" name="product.review.form.fields.before" as="form_fields_before" translate="label" />
+      </block>
     </reference>
--->
+      -->
   </reference>
+
+  <!-- 
+   **** Tried adding my own custom tabs here (downloaded Easy Tabs extension)
+  <reference name="product.info.additional">
+    <action method="unsetChild" ifconfig="easy_tabs/general/tagstabbed"><name>product_tag_list</name></action>
+    <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs">
+      <action method="setTemplate" ifconfig="easy_tabs/general/enabled"><template>easytabs/tabs.phtml</template></action>
+      <action method="addTab" translate="title" module="review" ifconfig="easy_tabs/general/reviewtabbed"><alias>review_tabbed</alias><title>Product's Review</title><block>review/product_view_list</block><template>easytabs/catalogproductreview.phtml</template></action>
+    </block>
+  </reference>
+  -->
 </catalog_product_view>
 
 <!-- # SEARCH # -->
